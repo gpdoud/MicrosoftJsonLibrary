@@ -1,0 +1,4 @@
+{
+  "ConnectionString": "server=localhost\\sqlexpress;database=AppDb;trusted_connection=true;",
+  "Server":  "DaffyDuck"
+}

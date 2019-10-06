@@ -8,11 +8,18 @@ namespace MicrosoftJson {
     class Program {
 
         void Run() {
+            DeserializeAppConfig();
             SerializeDeserializeExample();
             JsonReaderExample();
             JsonDocumentExample();
             Console.ReadKey();
         }
+
+        private void DeserializeAppConfig() {
+            var json = System.IO.File.ReadAllText(@"C:\repos\MicroosoftJson\MicroosoftJson\AppConfig.json");
+            var appConfig = JsonSerializer.Deserialize<AppConfig>(json);
+        }
+
         /// <summary>
         /// Serialize turns a class instance into JSON
         /// Deserialize turns JSON into a class instance
