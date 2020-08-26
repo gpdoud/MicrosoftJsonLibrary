@@ -16,7 +16,7 @@ namespace MicrosoftJson {
         }
 
         private void DeserializeAppConfig() {
-            var json = System.IO.File.ReadAllText(@"C:\repos\MicroosoftJson\MicroosoftJson\AppConfig.json");
+            var json = System.IO.File.ReadAllText(@"C:\repos\MicrosoftJson\MicroosoftJson\AppConfig.json");
             var appConfig = JsonSerializer.Deserialize<AppConfig>(json);
         }
 
